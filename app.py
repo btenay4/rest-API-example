@@ -3,7 +3,7 @@ from datetime import datetime
 import requests, json
 app = Flask(__name__)
 
-@app.route('/') #https://yourdomain.com/
+@app.route('https://baliii.herokuapp.com/') #https://yourdomain.com/
 def homepage():
     return '''<!DOCTYPE html>
 <html>
@@ -18,11 +18,11 @@ def homepage():
 </body>
 </html>'''
 #======================[ ARSYBAI ]==========================================
-@app.route('/hello?<string:name>') #https://yourdomain.com/hello?arsybai
+@app.route('https://baliii.herokuapp.com/hello?<string:name>') #https://yourdomain.com/hello?arsybai
 def hello(name):
     return 'Hello.. how are you {}'.format(str(name))
     
-@app.route('/json?') #https://yourdomain.com/json?
+@app.route('https://baliii.herokuapp.com/json?') #https://yourdomain.com/json?
 def out():
     contoh = ['anu','anu1','anu2']
     data = {
