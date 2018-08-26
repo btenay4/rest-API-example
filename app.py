@@ -3,7 +3,7 @@ from datetime import datetime
 import requests, json
 app = Flask(__name__)
 
-@app.route('https://baliii.herokuapp.com/') #https://yourdomain.com/
+@app.route('https://baliii.herokuapp.com/usage') #https://yourdomain.com/
 def homepage():
     return '''<!DOCTYPE html>
 <html>
